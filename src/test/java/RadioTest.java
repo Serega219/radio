@@ -133,7 +133,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
     @Test
-    public void testplusmax() {
+    public void testplusmaxx() {
         Radio radio = new Radio();
         radio.setCurrentVolume(100);
         radio.plus();
@@ -142,4 +142,5 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
 }
