@@ -6,7 +6,12 @@ public class Radio {
     private int currentStantion;
     private int currentVolume;
 
-    
+    public Radio() {
+
+    }
+    public Radio(int numberStation) {
+               this.maxRadioWave = numberStation - 1;
+    }
 
 
     public void next() {
@@ -34,7 +39,9 @@ public class Radio {
             currentVolume--;
         } return currentVolume;
     }
-
+    public int getMaxRadioStation() {
+        return maxRadioWave;
+    }
     public int getCurrentStantion() {
         return currentStantion;
     }
