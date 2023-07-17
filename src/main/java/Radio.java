@@ -9,13 +9,14 @@ public class Radio {
     public Radio() {
 
     }
+
     public Radio(int numberStation) {
-               this.maxRadioWave = numberStation - 1;
+        this.maxRadioWave = numberStation - 1;
     }
 
 
     public void next() {
-        if (currentStantion != maxRadioWave){
+        if (currentStantion != maxRadioWave) {
             currentStantion++;
         } else {
             currentStantion = minRadioWave;
@@ -29,19 +30,25 @@ public class Radio {
             currentStantion = maxRadioWave;
         }
     }
+
     public int plus() {
-        if (currentVolume != maxSoundLevel){
+        if (currentVolume != maxSoundLevel) {
             currentVolume++;
-        } return currentVolume;
+        }
+        return currentVolume;
     }
+
     public int minus() {
-        if (currentVolume != minSoundLevel){
+        if (currentVolume != minSoundLevel) {
             currentVolume--;
-        } return currentVolume;
+        }
+        return currentVolume;
     }
+
     public int getMaxRadioStation() {
         return maxRadioWave;
     }
+
     public int getCurrentStantion() {
         return currentStantion;
     }
